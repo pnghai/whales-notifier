@@ -6,8 +6,8 @@
   "scripts": {
     "start:build": "tsc -w",
     "start:run": "nodemon build/app.js",
-    "start": "concurrently npm:start:*",
-    "production": "tsc -w && node build/app.js",
+    "dev": "concurrently npm:start:*",
+    "start": "tsc -w && node build/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
