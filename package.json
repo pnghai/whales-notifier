@@ -1,0 +1,21 @@
+{
+  "name": "whale-notifiers",
+  "version": "1.0.0",
+  "description": "A Whales checker",
+  "main": "build/app.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/app.js",
+    "start": "concurrently npm:start:*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^15.12.4",
+    "@types/websocket": "^1.0.2",
+    "dotenv": "^10.0.0",
+    "node-telegram-bot-api": "^0.53.0",
+    "websocket": "^1.0.34"
+  }
+}
